@@ -3,6 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -80,7 +83,7 @@
           <div class="px-3">
             <span>Dra.</span>
             <h1 class=" text-start fw-bold ">
-              Maria Das Graças
+              Maria das Graças
             </h1>
             <!-- <p class="lead fs-6">
                   Especialista em Ortodontia
@@ -100,19 +103,53 @@
       </div>
     </div>
 
-  </section><!-- /About 2 Section -->
-  <div class="b-example-divider"></div>
+  </section>
+
+  <div class="b-example-divider" id="sobre_mim"></div>
+  <div class="container my-5">
+    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+      <!-- Imagem à esquerda -->
+      <div class="col-10 col-sm-8 col-lg-6">
+        <div class="img image-wrapper" data-aos="fade-right" data-aos-duration="3000">
+          <img src="imagens/DSC_0940.jpg" class="img-fluid rounded custom-portrait" alt="gracinha"
+          style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+        </div>  
+      </div>
+
+      <!-- Texto à direita -->
+      <div class="col-lg-6 p-3 p-lg-5 pt-lg-3" data-aos="fade-left" data-aos-duration="3000">
+        <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Sobre mim</h1>
+        <p>
+          Trabalho com ortodontia e sou apaixonada pelo que faço. Para mim o acolhimento é minha palavra-chave para
+          conquistar a confiança dos pacientes, muitos dos quais chegam com traumas de experiências anteriores com
+          dentistas. Faço questão de explicar cada passo dos procedimentos, esclarecendo todas as dúvidas para que
+          se sintam seguros e bem-informados.
+          <br><br>
+          Minha área de atuação abrange ortodontia para crianças e adultos, trabalhando com aparelhos ortopédicos,
+          aparelhos fixos e alinhadores. Além disso, ofereço tratamentos como clareamento dentário, ajudando cada
+          paciente a alcançar um sorriso saudável e confiante.
+          <br><br>
+          No consultório, conto com uma equipe de parceiros especializados, prontos para realizar cirurgias,
+          tratamentos de canal e implantes dentários, sempre garantindo um atendimento completo e de qualidade.
+          Nosso espaço é amplo e acolhedor, bem localizado no Centro Empresarial Shopping da Ilha, preparado para
+          oferecer uma experiência confortável a todos os pacientes.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="b-example-divider" id="avaliacoees"></div>
   <main>
     <div class="container my-5">
-      <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
-        <div id="avaliacoees" data-aos="fade-down" data-aos-duration="1500">
-          <h1>Avaliações</h1>
-          <p>
-            Confira o que nossos clientes têm a dizer!
-          </p>
+      <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg" data-aos="fade-right" data-aos-duration="3000">
+        <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Avaliações</h1>
+        <p>
+          Confira o que nossos clientes têm a dizer!
+        </p>
+        <div data-aos="fade-down" data-aos-duration="1500">
         </div>
-
-        <div class="swiper" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+        <div class="swiper" data-aos="fade-right" data-aos-duration="3000" data-aos-easing="ease-in-sine">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="testimonial-rate">
@@ -202,7 +239,7 @@
       </div>
     </div>
     <!-- contato -->
-    <div class="b-example-divider"></div>
+    <div class="b-example-divider" id="contato"></div>
     <div class="container my-5">
       <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
         <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
@@ -211,17 +248,20 @@
           <div class="row">
             <!-- Informações de contato e redes sociais -->
             <div class="col-md-5 mb-4">
-              <p><strong>Telefone:</strong> <a href="https://api.whatsapp.com/send/?phone=559881419938&text=Olá,+quero+agendar+uma+consulta+com+a+Dra.+Graça+Santos&type=phone_number&app_absent=0">(98) 98141-9938</a></p>
+              <p><strong>Telefone:</strong> <a
+                  href="https://api.whatsapp.com/send/?phone=559881419938&text=Olá,+quero+agendar+uma+consulta+com+a+Dra.+Graça+Santos&type=phone_number&app_absent=0">(98)
+                  98141-9938</a></p>
               <p>Siga-nos nas redes sociais:</p>
               <p>
-                <a href="https://www.instagram.com/dragracinhagsantos/" target="_blank" class="btn btn-outline-primary me-2">
+                <a href="https://www.instagram.com/dragracinhagsantos/" target="_blank"
+                  class="btn btn-outline-primary me-2">
                   Instagram
                 </a>
               </p>
             </div>
           </div>
         </div>
-        <div class="col-lg-4  p-0 overflow-hidden">
+        <!-- <div class="col-lg-4  p-0 overflow-hidden">
           <div class="col-md-7">
             <p>Deixe seu telefone que irei entrar em contato</p>
             <form>
@@ -236,9 +276,10 @@
               <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
+
 
   </main>
 

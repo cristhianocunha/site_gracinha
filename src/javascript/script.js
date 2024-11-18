@@ -24,3 +24,20 @@ var swiper = new Swiper(".swiper", {
         }
     }
 });
+$(document).ready(function() {
+    $('#form').on('submit', function(e) {
+        e.preventDefault(); // Impede o envio padrão do formulário
+
+        $.ajax({
+            url: 'back_end/formulario.php', // Substitua pelo caminho do seu arquivo PHP
+            type: 'POST',
+            data: $(this).serialize(), // Serializa os dados do formulário
+            success: function(response) {
+                $('.error-message').html('<div class="alert alert-success">' + response + '</div>');
+            },
+            error: function() {
+                $('.error-message').html('<div class="alert alert-danger">Ocorreu um erro ao enviar os dados.</div>');
+            }
+        });
+    });
+});
